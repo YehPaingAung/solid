@@ -39,6 +39,11 @@ button {
   background-color: transparent;
 }
 
+button:hover {
+  background-color: #f97300;
+  color: whitesmoke;
+}
+
 .bg-primary-color {
   background-color: #7d0a0a;
 }
@@ -98,10 +103,20 @@ img {
   padding: 5px;
 }
 
+.nav-socials img:hover {
+  background-color: #c2c0b2;
+}
+
 .bread-crumb {
   display: flex;
   max-width: 50px;
   flex: 1;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .nav-bar {
+    padding-top: 2rem;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -115,6 +130,10 @@ img {
     gap: 2rem;
     flex-wrap: wrap;
     padding-top: 1rem;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline #f97300;
   }
 
   .nav-socials {
@@ -193,6 +212,11 @@ img {
   border: 1px solid #142a4e;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.matches-card:hover {
+  background-color: #adaba4;
 }
 
 .matches-card-top {
@@ -230,7 +254,13 @@ img {
 }
 
 .about-gallery .btn-top {
-  background-color: #e2dfd0;
+  background-color: #f97300;
+  color: white;
+  border: none;
+}
+
+.about-gallery .btn-top:hover {
+  background-color: #9a5111;
 }
 
 .card-1 h4 {
@@ -377,7 +407,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.5fr;
   overflow: hidden;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .store-display-card img {
@@ -386,6 +416,11 @@ img {
   object-fit: cover;
   object-position: 35%;
   border-radius: 10px;
+}
+
+.store-display-card img:hover {
+  border: 2px solid #c9c7b9;
+  padding: 6px 3px;
 }
 
 .store-tag h4 {
